@@ -1,10 +1,10 @@
-* {
+*{
   box-sizing: border-box;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-html {
-  font-size: 100%;
+*:before, *:after {
+  box-sizing: border-box;
 }
 body {
   font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
