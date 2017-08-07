@@ -13,12 +13,11 @@
   text-rendering: optimizeLegibility; }
 
 html {
-  font-size: 62.5%;
-  background: radial-gradient(ellipse at center, #F7F6F0 0, #c2ba8c 80%, #b0a66b 100%); }
+  font-size: 100%; }
 
 body {
   font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
-  color: #444;
+  color: #000;
   transition: all .4s .3s ease-in; }
 
 body, html {
@@ -390,12 +389,6 @@ textarea {
   /* 1 */
   font: inherit;
   /* 2 */ }
-
-.logo {
-  margin: -58px 0 0 -100px;
-  position: absolute;
-  top: 50%;
-  left: 50%; }
 
 .nav ul {
   list-style: none; }
