@@ -58,3 +58,21 @@
   background-color: transparent;
   border: 0;
 }
+
+/* Print Stuff */
+
+.show-print {
+  display: none !important;
+}
+
+.show-print-block {
+  display: none !important;
+}
+
+.show-print-inline {
+  display: none !important;
+}
+
+.show-print-inline-block {
+  display: none !important;
+}

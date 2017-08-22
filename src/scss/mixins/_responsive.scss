@@ -1,0 +1,35 @@
+@mixin breakpoint($mq01: 0, $mq2: false, $maxmin: max-width) {
+  @if $mq2 == false {
+    @media ($maxmin: $mq01) {
+      @content;
+    }
+  }
+
+  @else {
+    @media (min-width: $mq01) and (max-width: $mq2) {
+      @content;
+    }
+  }
+}
+
+// @include breakpoint($md) {
+  // usage
+// }
+
+@mixin responsive-content($width, $height, $element: img, $youtube: false) {
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: percentage($height/$width);
+
+  #{$element} {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    @if $youtube {
+      padding-bottom: 35px;
+    }
+  }
+}

@@ -3,6 +3,7 @@
 //----------------------------------*/
 
 @import 'mixins/_position.scss';
+@import 'mixins/_responsive.scss';
 
 //----------------------------------*\
 // VARIABLES
@@ -19,17 +20,16 @@
 // Config modules
 @import 'modules/_normalize.scss';
 @import 'modules/_defaults.scss';
-@import 'modules/_grid.scss';
 @import 'modules/_helpers.scss';
 
 //----------------------------------*\
 // OBJECTS & MODULES
 //----------------------------------*/
 
+@import 'modules/_grid.scss';
+@import 'modules/_typography.scss';
 @import 'modules/_form.scss';
 @import 'modules/_lists.scss';
-@import 'modules/_typography.scss';
-@import 'modules/_misc.scss';
 
 //----------------------------------*\
 // PARTIALS
@@ -41,10 +41,7 @@
 @import 'partials/_main.scss';
 @import 'partials/_footer.scss';
 
-
 @import 'modules/_app.scss';
-
-// Enhancement modules
 @import 'modules/_print.scss';
 
 
