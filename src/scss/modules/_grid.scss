@@ -4,6 +4,36 @@
   padding-left: $gutter;
   padding-right: $gutter;
 }
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: $gutter;
+  padding-right: $gutter;
+}
+
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.container-fluid:after,
+.row:after {
+  clear: both;
+}
+@-ms-viewport {
+  width: device-width;
+}
+
+.row {
+  margin-left: $gutter;
+  margin-right: $gutte;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -18,10 +48,4 @@
   .container {
     width: 1170px;
   }
-}
-.container-fluid {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: $gutter;
-  padding-right: $gutter;
 }
